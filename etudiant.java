@@ -16,11 +16,14 @@ public class Etudiant {
         this.notes = notes;
     }
 
-    public void afficher() {
+    public void calculer() {
+        System.out.println();
+    }
+
+	public void afficher() {
         System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age + ", Matricule: " + matricule);
         System.out.println("Notes: " + Arrays.toString(notes));
     }
-
     public static void main(String[] args) {
         double[] notesEtudiant1 = { 15.5, 12.0, 17.5 };
         Etudiant etudiant1 = new Etudiant("Dupont", "Jean", 20, "123456", notesEtudiant1);
